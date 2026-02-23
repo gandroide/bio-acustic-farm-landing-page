@@ -1,0 +1,221 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  z-index: 1000;
+  transition: all var(--transition-base);
+  background: transparent;
+}
+
+.navbar--scrolled {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), var(--shadow-sm);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Logo */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.navbar__logo-icon {
+  color: var(--color-green-700);
+}
+
+.navbar__logo-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-steel-800);
+  letter-spacing: -0.01em;
+}
+
+.navbar__logo-bio {
+  color: var(--color-green-700);
+}
+
+/* Right Side */
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+/* Brivex Badge */
+.navbar__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  background: var(--bg-white);
+  border: 1px solid var(--color-steel-100);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  letter-spacing: 0.02em;
+}
+
+.navbar__badge:hover {
+  border-color: var(--color-green-500);
+  color: var(--color-green-700);
+}
+
+.navbar__badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-green-500);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* Language Switcher */
+.navbar__lang {
+  display: flex;
+  gap: 2px;
+  background: var(--color-steel-50);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+}
+
+.navbar__lang-btn {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text-tertiary);
+  transition: all var(--transition-fast);
+  letter-spacing: 0.05em;
+}
+
+.navbar__lang-btn--active {
+  background: var(--color-green-700);
+  color: #fff;
+}
+
+.navbar__lang-btn:not(.navbar__lang-btn--active):hover {
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Hamburger */
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  padding: 4px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar__hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: all var(--transition-base);
+  transform-origin: center;
+}
+
+.navbar__hamburger--open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar__hamburger--open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__hamburger--open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Panel */
+.navbar__mobile-panel {
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: var(--space-2xl) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+  animation: fadeDown 0.25s ease;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar__mobile-lang {
+  display: flex;
+  gap: 4px;
+  background: var(--color-steel-50);
+  border-radius: var(--radius-sm);
+  padding: 3px;
+}
+
+.navbar__mobile-lang .navbar__lang-btn {
+  font-size: 0.9rem;
+  padding: 8px 20px;
+}
+
+.navbar__badge--mobile {
+  font-size: 0.9rem;
+  padding: 8px 18px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .navbar__lang {
+    display: none;
+  }
+
+  .navbar__badge {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+}

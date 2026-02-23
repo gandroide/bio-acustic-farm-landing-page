@@ -1,0 +1,70 @@
+.problem-solution {
+  background: var(--bg-white);
+}
+
+.problem-block {
+  max-width: 720px;
+  margin-bottom: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
+  border-bottom: 1px solid var(--color-steel-100);
+}
+
+.solution-header {
+  margin-bottom: var(--space-2xl);
+}
+
+.section-tag--green {
+  color: var(--color-green-700);
+  background: var(--color-green-50);
+  border-color: var(--color-green-100);
+}
+
+.solution-grid {
+  margin-top: var(--space-lg);
+}
+
+.solution-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.solution-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-green-700), var(--color-green-400));
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.solution-card:hover::before {
+  opacity: 1;
+}
+
+/* Card icon color variations */
+.card-icon--privacy {
+  background: #fef3cd;
+  border-color: #fde68a;
+  color: var(--color-amber-600);
+}
+
+.card-icon--biosecurity {
+  background: var(--color-green-50);
+  border-color: var(--color-green-100);
+  color: var(--color-green-700);
+}
+
+.card-icon--autonomy {
+  background: var(--color-steel-50);
+  border-color: var(--color-steel-100);
+  color: var(--color-steel-700);
+}
+
+.card-icon--extraction {
+  background: #ede9fe;
+  border-color: #ddd6fe;
+  color: #6d28d9;
+}

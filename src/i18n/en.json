@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "brivexBadge": "A Brivex Project",
+    "langLabel": "Language"
+  },
+  "hero": {
+    "title": "Intelligent Acoustic Auditing for Swine Maternity.",
+    "subtitle": "Reduce crushing mortality in the first 72 hours. 24/7 monitoring through Edge AI, no cameras, with 100% energy autonomy.",
+    "ctaPrimary": "Join the Pilot Program",
+    "ctaSecondary": "Client Access"
+  },
+  "problem": {
+    "sectionTag": "The Challenge",
+    "title": "A silent problem impacting your profitability",
+    "description": "Neonatal crushing mortality in swine maternity houses represents up to 8% losses per litter. Late detection of acoustic stress signals — such as crushing screams and persistent coughing — delays intervention and multiplies losses. Traditional camera-based methods compromise biosecurity and require expensive network infrastructure."
+  },
+  "solution": {
+    "sectionTag": "The Solution",
+    "title": "Technology that listens to what you can't hear",
+    "cards": {
+      "privacy": {
+        "title": "Absolute Privacy",
+        "description": "Zero cameras. We only process decibel frequencies through edge acoustic AI models. No images, no video transmission, no risk."
+      },
+      "biosecurity": {
+        "title": "IP65 Biosecurity",
+        "description": "Sealed nodes designed for hostile environments. Withstand pressure washing, disinfection chemicals, and extreme temperatures."
+      },
+      "autonomy": {
+        "title": "Total Autonomy",
+        "description": "Integrated industrial batteries with months of autonomy. No cables, no dependency on your power grid, no single points of failure."
+      },
+      "extraction": {
+        "title": "Magnetic Extraction",
+        "description": "Local data download via magnetic connector. No contact with your Wi-Fi network or IT infrastructure. Data stays secure on your device."
+      }
+    }
+  },
+  "earlyAdopters": {
+    "sectionTag": "Exclusive Opportunity",
+    "title": "Founding Partners Program",
+    "subtitle": "We are selecting technified farms to participate in our acoustic calibration phase. In return, you receive:",
+    "benefits": {
+      "audit": {
+        "title": "Free Acoustic Audit",
+        "description": "Complete evaluation of your maternity house at no cost."
+      },
+      "hardware": {
+        "title": "Factory-Cost Hardware",
+        "description": "Bio-Alert nodes at production price, no commercial markup."
+      },
+      "license": {
+        "title": "1 Year Complimentary License",
+        "description": "Full access to the acoustic analytics software for 12 months."
+      }
+    },
+    "cta": "I Want to Be a Founding Partner"
+  },
+  "footer": {
+    "formTitle": "Request Feasibility Assessment",
+    "formDescription": "Complete the form and our technical team will evaluate Bio-Alert's compatibility with your operation.",
+    "fields": {
+      "company": "Company / Farm Name",
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone (with country code)",
+      "message": "Tell us about your operation"
+    },
+    "submit": "Submit Request",
+    "legal": "Ontiveros Bio-Alert is an innovation solution developed by Brivex.",
+    "copyright": "© 2026 Ontiveros Bio-Alert · A Brivex Innovation"
+  }
+}

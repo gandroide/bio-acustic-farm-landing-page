@@ -1,0 +1,135 @@
+.footer {
+  background: var(--bg-dark-deep);
+  color: var(--text-on-dark);
+  padding: var(--space-4xl) 0 var(--space-2xl);
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: var(--space-4xl);
+  align-items: start;
+}
+
+/* Form Column */
+.footer__form-title {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  color: var(--text-on-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.footer__form-desc {
+  color: var(--text-on-dark-muted);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-2xl);
+  max-width: 480px;
+}
+
+.footer__form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.footer__submit {
+  margin-top: var(--space-sm);
+  min-width: 200px;
+}
+
+.footer__submit:hover {
+  transform: translateY(-2px);
+}
+
+/* Info Column */
+.footer__info-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding-top: var(--space-lg);
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.footer__brand-icon {
+  color: var(--color-green-400);
+  opacity: 0.8;
+}
+
+.footer__brand-name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-on-dark);
+}
+
+.footer__brand-sub {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-on-dark-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer__legal {
+  font-size: 0.85rem;
+  color: var(--text-on-dark-muted);
+  line-height: 1.6;
+  max-width: 360px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.footer__links a {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-green-400);
+  opacity: 0.8;
+  transition: opacity var(--transition-fast);
+}
+
+.footer__links a:hover {
+  opacity: 1;
+  color: var(--color-green-400);
+}
+
+.footer__bottom {
+  margin-top: auto;
+  padding-top: var(--space-xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer__copyright {
+  font-size: 0.8rem;
+  color: var(--text-on-dark-muted);
+  opacity: 0.6;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .footer__form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__info-col {
+    padding-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: var(--space-xl);
+  }
+}

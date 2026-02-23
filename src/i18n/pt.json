@@ -1,0 +1,73 @@
+{
+  "nav": {
+    "brivexBadge": "Um Projeto Brivex",
+    "langLabel": "Idioma"
+  },
+  "hero": {
+    "title": "Auditoria Acústica Inteligente para Maternidade Suína.",
+    "subtitle": "Reduza a mortalidade por esmagamento nas primeiras 72 horas. Monitoramento 24/7 com IA na borda, sem câmeras e com 100% de autonomia energética.",
+    "ctaPrimary": "Participar do Programa Piloto",
+    "ctaSecondary": "Acesso para Clientes"
+  },
+  "problem": {
+    "sectionTag": "O Desafio",
+    "title": "Um problema silencioso que impacta sua rentabilidade",
+    "description": "A mortalidade neonatal por esmagamento em maternidades suínas representa até 8% de perdas por ninhada. A detecção tardia de sinais acústicos de estresse — como gritos de esmagamento e tosse persistente — atrasa a intervenção e multiplica as perdas. Os métodos tradicionais baseados em câmeras comprometem a biossegurança e exigem infraestrutura de rede cara."
+  },
+  "solution": {
+    "sectionTag": "A Solução",
+    "title": "Tecnologia que ouve o que você não consegue",
+    "cards": {
+      "privacy": {
+        "title": "Privacidade Absoluta",
+        "description": "Zero câmeras. Processamos apenas frequências de decibéis por meio de modelos de IA acústica na borda. Sem imagens, sem transmissão de vídeo, sem risco."
+      },
+      "biosecurity": {
+        "title": "Biossegurança IP65",
+        "description": "Nós estanques projetados para ambientes hostis. Resistem a lavagem sob pressão, químicos de desinfecção e temperaturas extremas."
+      },
+      "autonomy": {
+        "title": "Autonomia Total",
+        "description": "Baterias industriais integradas com meses de autonomia. Sem cabos, sem dependência da sua rede elétrica, sem pontos de falha."
+      },
+      "extraction": {
+        "title": "Extração Magnética",
+        "description": "Download local de dados via conector magnético. Sem contato com sua rede Wi-Fi ou infraestrutura de TI. Dados seguros no seu dispositivo."
+      }
+    }
+  },
+  "earlyAdopters": {
+    "sectionTag": "Oportunidade Exclusiva",
+    "title": "Programa de Parceiros Fundadores",
+    "subtitle": "Selecionamos granjas tecnificadas para participar da nossa fase de calibração acústica. Em troca, você recebe:",
+    "benefits": {
+      "audit": {
+        "title": "Auditoria Acústica Gratuita",
+        "description": "Avaliação completa da sua maternidade sem custo."
+      },
+      "hardware": {
+        "title": "Hardware a Preço de Fábrica",
+        "description": "Nós Bio-Alert ao preço de produção, sem markup comercial."
+      },
+      "license": {
+        "title": "1 Ano de Licença Bonificada",
+        "description": "Acesso completo ao software de analítica acústica por 12 meses."
+      }
+    },
+    "cta": "Quero Ser Parceiro Fundador"
+  },
+  "footer": {
+    "formTitle": "Solicitar Avaliação de Viabilidade",
+    "formDescription": "Preencha o formulário e nossa equipe técnica avaliará a compatibilidade do Bio-Alert com a sua operação.",
+    "fields": {
+      "company": "Nome da Empresa / Granja",
+      "name": "Seu Nome",
+      "email": "E-mail",
+      "phone": "Telefone (com código do país)",
+      "message": "Conte-nos sobre a sua operação"
+    },
+    "submit": "Enviar Solicitação",
+    "legal": "Ontiveros Bio-Alert é uma solução de inovação desenvolvida pela Brivex.",
+    "copyright": "© 2026 Ontiveros Bio-Alert · Uma Inovação Brivex"
+  }
+}
