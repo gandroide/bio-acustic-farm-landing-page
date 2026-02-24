@@ -36,6 +36,26 @@
       }
     }
   },
+  "rdVision": {
+    "sectionTag": "R&D Vision",
+    "title": "Brivex R&D: The Future of Biosecurity",
+    "subtitle": "Bio-Alert is our Trojan Horse. Our vision is a comprehensive ecosystem.",
+    "intro": "We are not a single-sensor company. At Brivex, we are developing the next generation of IoT infrastructure to guarantee the sanitary invulnerability of your facilities. By joining our ecosystem today, your farm will be ready for our future R&D implementations:",
+    "cards": {
+      "environmental": {
+        "title": "Environmental & Epidemiological Monitoring",
+        "description": "Next-generation sensors for real-time measurement of particulate matter, critical ammonia levels, and early detection of airborne pathogens and waterline contaminants."
+      },
+      "biomarkers": {
+        "title": "Advanced Clinical Biomarkers",
+        "description": "Evolution of our AI algorithms to identify behavioral patterns and anomalies that precede severe outbreaks, such as the neurological alterations typical of streptococcal meningitis."
+      },
+      "access": {
+        "title": "Intelligent Access Control & Disinfection",
+        "description": "Automated systems to audit personnel flow. Integration of smart sanitary airlocks that ensure compliance with shower and advanced disinfection protocols."
+      }
+    }
+  },
   "earlyAdopters": {
     "sectionTag": "Exclusive Opportunity",
     "title": "Founding Client Program",

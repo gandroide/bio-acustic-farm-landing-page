@@ -36,6 +36,26 @@
       }
     }
   },
+  "rdVision": {
+    "sectionTag": "Visão P&D",
+    "title": "Brivex P&D: O Futuro da Biossegurança",
+    "subtitle": "Bio-Alert é o nosso Cavalo de Troia. Nossa visão é um ecossistema integral.",
+    "intro": "Não somos uma empresa de um único sensor. Na Brivex, estamos desenvolvendo a próxima geração de infraestruturas IoT para garantir a invulnerabilidade sanitária das suas instalações. Ao se juntar ao nosso ecossistema hoje, sua granja estará preparada para nossas futuras implementações de P&D:",
+    "cards": {
+      "environmental": {
+        "title": "Monitoramento Ambiental e Epidemiológico",
+        "description": "Sensores de próxima geração para a medição em tempo real de material particulado, níveis críticos de amônia e detecção precoce de patógenos suspensos no ar e nas linhas de água."
+      },
+      "biomarkers": {
+        "title": "Biomarcadores Clínicos Avançados",
+        "description": "Evolução dos nossos algoritmos de IA para identificar padrões de comportamento e anomalias que precedem surtos severos, como as alterações neurológicas típicas da meningite estreptocócica."
+      },
+      "access": {
+        "title": "Controle de Acessos e Desinfecção Inteligente",
+        "description": "Sistemas automatizados para auditar o fluxo de pessoal. Integração de eclusas sanitárias inteligentes que garantem o cumprimento dos protocolos de ducha e desinfecção avançada."
+      }
+    }
+  },
   "earlyAdopters": {
     "sectionTag": "Oportunidade Exclusiva",
     "title": "Programa de Cliente Fundadores",
