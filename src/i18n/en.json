@@ -38,7 +38,7 @@
   },
   "earlyAdopters": {
     "sectionTag": "Exclusive Opportunity",
-    "title": "Founding Partners Program",
+    "title": "Founding Client Program",
     "subtitle": "We are selecting technified farms to participate in our acoustic calibration phase. In return, you receive:",
     "benefits": {
       "audit": {
@@ -54,7 +54,7 @@
         "description": "Full access to the acoustic analytics software for 12 months."
       }
     },
-    "cta": "I Want to Be a Founding Partner"
+    "cta": "I Want to Be a Founding Clients"
   },
   "footer": {
     "formTitle": "Request Feasibility Assessment",

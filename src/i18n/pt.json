@@ -38,7 +38,7 @@
   },
   "earlyAdopters": {
     "sectionTag": "Oportunidade Exclusiva",
-    "title": "Programa de Parceiros Fundadores",
+    "title": "Programa de Cliente Fundadores",
     "subtitle": "Selecionamos granjas tecnificadas para participar da nossa fase de calibração acústica. Em troca, você recebe:",
     "benefits": {
       "audit": {
@@ -54,7 +54,7 @@
         "description": "Acesso completo ao software de analítica acústica por 12 meses."
       }
     },
-    "cta": "Quero Ser Parceiro Fundador"
+    "cta": "Quero Ser Cliente Fundador"
   },
   "footer": {
     "formTitle": "Solicitar Avaliação de Viabilidade",
