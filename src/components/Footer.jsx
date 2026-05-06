@@ -45,7 +45,7 @@ export default function Footer() {
             <h4 className="footer__col-title">{t('footer.nav.company')}</h4>
             <ul className="footer__links">
               <li><a href="https://brivex.app" target="_blank" rel="noopener noreferrer">{t('footer.nav.about')}</a></li>
-              <li><a href="#contact">{t('footer.nav.contact')}</a></li>
+              <li><a href="#simulator">{t('footer.nav.contact')}</a></li>
               <li><a href="#">{t('footer.nav.privacy')}</a></li>
               <li><a href="#">{t('footer.nav.terms')}</a></li>
             </ul>

@@ -84,7 +84,7 @@ export default function EarlyAdoptersSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
           >
-            <a href="#contact" className="btn btn-amber" id="cta-founding-partner">
+            <a href="#simulator" className="btn btn-amber" id="cta-founding-partner">
               {t('earlyAdopters.cta')}
             </a>
           </motion.div>
