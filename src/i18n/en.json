@@ -76,17 +76,95 @@
     },
     "cta": "I Want to Be a Founding Clients"
   },
-  "footer": {
-    "formTitle": "Request Feasibility Assessment",
-    "formDescription": "Complete the form and our technical team will evaluate Bio-Alert's compatibility with your operation.",
-    "fields": {
-      "company": "Company / Farm Name",
-      "name": "Your Name",
-      "email": "Email Address",
-      "phone": "Phone (with country code)",
-      "message": "Tell us about your operation"
+  "simulator": {
+    "sectionTag": "Impact Simulator",
+    "title": "Calculate the hidden cost in your farm",
+    "description": "Adjust the environmental variables of your farrowing unit to discover your current risk of crushing mortality and the projected ROI with Bio-Alert technology.",
+    "labels": {
+      "temperature": "Farrowing Temperature",
+      "noise": "Noise / Activity Level",
+      "productionSize": "Production Size"
     },
-    "submit": "Submit Request",
+    "options": {
+      "optimal": "Optimal",
+      "summer": "Summer",
+      "heatwave": "Heatwave",
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "mothers": "Sows"
+    },
+    "phase1": {
+      "title": "The Reality of Your Farm",
+      "mortalityRisk": "Estimated Mortality Risk",
+      "economicLoss": "Economic Loss (Monthly)",
+      "currency": "USD",
+      "button": "Activate Bio-Alert"
+    },
+    "phase2": {
+      "title": "The Bio-Alert Effect",
+      "detection": "Anomaly detection in",
+      "detectionTime": "< 2 seconds",
+      "notification": "Haptic notification in",
+      "notificationTime": "0.5 sec",
+      "reduction": "Mortality reduced by",
+      "reductionValue": "85%",
+      "roi": "Return on Investment (Monthly)",
+      "recalculate": "Recalculate scenario"
+    },
+    "cta": {
+      "title": "Secure this technology for your farm",
+      "description": "Join the early access list before the official launch.",
+      "placeholder": "Enter your email",
+      "button": "Secure my spot"
+    }
+  },
+  "techSpecs": {
+    "tag": "TECHNICAL SPECIFICATIONS",
+    "title": "Built for the most demanding farm environment.",
+    "desc": "Industrial hardware designed to operate 24/7 in conditions of high humidity, heat, and noise without human intervention.",
+    "specs": {
+      "protection": { "label": "PROTECTION", "value": "IP65", "desc": "Sealed against dust and direct water jets. Suitable for facility washing." },
+      "processing": { "label": "PROCESSING", "value": "Edge AI", "desc": "Local inference on the device. No reliance on connectivity for detection." },
+      "energy": { "label": "ENERGY", "value": "100% autonomous", "desc": "Integrated solar panel with 72h backup battery. No electrical wiring required." },
+      "detection": { "label": "DETECTION", "value": "< 2 sec", "desc": "Acoustic detection latency of critical events from the onset of crushing." },
+      "connectivity": { "label": "CONNECTIVITY", "value": "LoRa / 4G", "desc": "Automatic switching between LoRaWAN and 4G LTE based on network availability." },
+      "range": { "label": "OPERATING RANGE", "value": "-10 to 55°C", "desc": "Certified to operate in extreme heat conditions typical of swine maternity." },
+      "storage": { "label": "STORAGE", "value": "Local + Cloud", "desc": "30-day local buffer. Automatic synchronization with dashboard upon regaining connectivity." },
+      "coverage": { "label": "COVERAGE", "value": "1 sensor / 8 m²", "desc": "Recommended installation guideline for standard 2.4 m height maternity units." },
+      "installation": { "label": "INSTALLATION", "value": "< 15 min", "desc": "Plug-and-play mounting. No construction, no specialized technicians. In-app guide." }
+    },
+    "certs": {
+      "ce": { "badge": "CE Mark", "desc": "European electrical safety conformity" },
+      "rohs": { "badge": "RoHS", "desc": "Free of hazardous substances" },
+      "lorawan": { "badge": "LoRaWAN 1.0.4", "desc": "Protocol certified by LoRa Alliance" },
+      "gdpr": { "badge": "GDPR ready", "desc": "Data processed on device, no raw audio in cloud" }
+    },
+    "arch": {
+      "title": "SYSTEM ARCHITECTURE",
+      "nodes": {
+        "sensor": { "title": "Acoustic Sensor", "desc": "MEMS Array" },
+        "edge": { "title": "Edge AI", "desc": "Local inference" },
+        "alert": { "title": "Haptic Alert", "desc": "Smartwatch op." },
+        "dashboard": { "title": "Dashboard", "desc": "Web + mobile" },
+        "predictive": { "title": "Predictive Engine", "desc": "Prediction" }
+      }
+    }
+  },
+  "footer": {
+    "brandDesc": "Intelligent acoustic auditing with Edge AI to transform the biosecurity and profitability of your swine maternity.",
+    "nav": {
+      "product": "Product",
+      "problem": "The Challenge",
+      "solution": "Technology",
+      "simulator": "ROI Simulator",
+      "earlyAdopters": "Early Access",
+      "company": "Company",
+      "about": "About Brivex",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
     "legal": "Bio-Alert is an innovation solution developed by Brivex.",
     "copyright": "© 2026 Bio-Alert · A Brivex Innovation"
   }

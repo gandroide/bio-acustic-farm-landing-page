@@ -65,9 +65,7 @@ export default function HeroSection() {
             <a href="#early-adopters" className="btn btn-primary" id="cta-pilot">
               {t('hero.ctaPrimary')}
             </a>
-            <a href="https://app.bioalert.brivex.ai" className="btn btn-outline" id="cta-clients" target="_blank" rel="noopener noreferrer">
-              {t('hero.ctaSecondary')}
-            </a>
+
           </motion.div>
         </motion.div>
 

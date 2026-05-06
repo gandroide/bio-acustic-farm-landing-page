@@ -4,6 +4,8 @@ import HeroSection from './components/HeroSection'
 import ProblemSolutionSection from './components/ProblemSolutionSection'
 import RDVisionSection from './components/RDVisionSection'
 import EarlyAdoptersSection from './components/EarlyAdoptersSection'
+import BioAlertImpactSimulator from './components/BioAlertImpactSimulator'
+import TechSpecsSection from './components/TechSpecsSection'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -15,6 +17,8 @@ export default function App() {
         <ProblemSolutionSection />
         <RDVisionSection />
         <EarlyAdoptersSection />
+        <BioAlertImpactSimulator />
+        <TechSpecsSection />
       </main>
       <Footer />
     </LanguageProvider>

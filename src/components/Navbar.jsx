@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="navbar__right">
           {/* Brivex Badge */}
           <a
-            href="https://brivex.ai"
+            href="https://brivex.app"
             target="_blank"
             rel="noopener noreferrer"
             className="navbar__badge"
@@ -96,7 +96,7 @@ export default function Navbar() {
             ))}
           </div>
           <a
-            href="https://brivex.ai"
+            href="https://brivex.app"
             target="_blank"
             rel="noopener noreferrer"
             className="navbar__badge navbar__badge--mobile"

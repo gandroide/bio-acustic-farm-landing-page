@@ -76,17 +76,95 @@
     },
     "cta": "Quero Ser Cliente Fundador"
   },
-  "footer": {
-    "formTitle": "Solicitar Avaliação de Viabilidade",
-    "formDescription": "Preencha o formulário e nossa equipe técnica avaliará a compatibilidade do Bio-Alert com a sua operação.",
-    "fields": {
-      "company": "Nome da Empresa / Granja",
-      "name": "Seu Nome",
-      "email": "E-mail",
-      "phone": "Telefone (com código do país)",
-      "message": "Conte-nos sobre a sua operação"
+  "simulator": {
+    "sectionTag": "Simulador de Impacto",
+    "title": "Calcule o custo oculto na sua granja",
+    "description": "Ajuste as variáveis ambientais da sua maternidade para descobrir o risco atual de mortalidade por esmagamento e o ROI projetado com a tecnologia Bio-Alert.",
+    "labels": {
+      "temperature": "Temperatura da Maternidade",
+      "noise": "Nível de Ruído / Atividade",
+      "productionSize": "Tamanho da Produção"
     },
-    "submit": "Enviar Solicitação",
+    "options": {
+      "optimal": "Ideal",
+      "summer": "Verão",
+      "heatwave": "Onda de Calor",
+      "low": "Baixo",
+      "normal": "Normal",
+      "high": "Alto",
+      "mothers": "Matrizes"
+    },
+    "phase1": {
+      "title": "A Realidade da Sua Granja",
+      "mortalityRisk": "Risco de Mortalidade Estimado",
+      "economicLoss": "Perda Econômica (Mensal)",
+      "currency": "USD",
+      "button": "Ativar Bio-Alert"
+    },
+    "phase2": {
+      "title": "O Efeito Bio-Alert",
+      "detection": "Detecção de anomalias em",
+      "detectionTime": "< 2 segundos",
+      "notification": "Notificação háptica em",
+      "notificationTime": "0,5 seg",
+      "reduction": "Mortalidade reduzida em",
+      "reductionValue": "85%",
+      "roi": "Retorno sobre Investimento (Mensal)",
+      "recalculate": "Recalcular cenário"
+    },
+    "cta": {
+      "title": "Garanta essa tecnologia para sua granja",
+      "description": "Junte-se à lista de acesso antecipado antes do lançamento oficial.",
+      "placeholder": "Insira seu e-mail",
+      "button": "Garantir meu lugar"
+    }
+  },
+  "techSpecs": {
+    "tag": "ESPECIFICAÇÕES TÉCNICAS",
+    "title": "Construído para o ambiente mais exigente da granja.",
+    "desc": "Hardware industrial projetado para operar 24/7 em condições de alta umidade, calor e ruído sem intervenção humana.",
+    "specs": {
+      "protection": { "label": "PROTEÇÃO", "value": "IP65", "desc": "Vedado contra poeira e jatos diretos de água. Adequado para lavagem de instalações." },
+      "processing": { "label": "PROCESSAMENTO", "value": "Edge AI", "desc": "Inferência local no dispositivo. Sem dependência de conectividade para detecção." },
+      "energy": { "label": "ENERGIA", "value": "100% autônomo", "desc": "Painel solar integrado com bateria de backup de 72h. Sem fiação elétrica." },
+      "detection": { "label": "DETECÇÃO", "value": "< 2 seg", "desc": "Latência de detecção acústica de eventos críticos a partir do início do esmagamento." },
+      "connectivity": { "label": "CONECTIVIDADE", "value": "LoRa / 4G", "desc": "Comutação automática entre LoRaWAN e 4G LTE com base na disponibilidade da rede." },
+      "range": { "label": "ALCANCE OPERACIONAL", "value": "-10 a 55°C", "desc": "Certificado para operar em condições de calor extremo típicas de maternidade suína." },
+      "storage": { "label": "ARMAZENAMENTO", "value": "Local + Cloud", "desc": "Buffer local de 30 dias. Sincronização automática com dashboard ao recuperar conectividade." },
+      "coverage": { "label": "COBERTURA", "value": "1 sensor / 8 m²", "desc": "Pauta de instalação recomendada para maternidades padrão de 2,4 m de altura." },
+      "installation": { "label": "INSTALAÇÃO", "value": "< 15 min", "desc": "Montagem plug-and-play. Sem obras, sem técnico especializado. Guia no app." }
+    },
+    "certs": {
+      "ce": { "badge": "CE Mark", "desc": "Conformidade europeia de segurança elétrica" },
+      "rohs": { "badge": "RoHS", "desc": "Livre de substâncias perigosas" },
+      "lorawan": { "badge": "LoRaWAN 1.0.4", "desc": "Protocolo certificado pela LoRa Alliance" },
+      "gdpr": { "badge": "GDPR ready", "desc": "Dados processados no dispositivo, sem áudio bruto na nuvem" }
+    },
+    "arch": {
+      "title": "ARQUITETURA DO SISTEMA",
+      "nodes": {
+        "sensor": { "title": "Sensor acústico", "desc": "Array MEMS" },
+        "edge": { "title": "Edge AI", "desc": "Inferência local" },
+        "alert": { "title": "Alerta háptico", "desc": "Smartwatch op." },
+        "dashboard": { "title": "Dashboard", "desc": "Web + mobile" },
+        "predictive": { "title": "Motor Preditivo", "desc": "Predição" }
+      }
+    }
+  },
+  "footer": {
+    "brandDesc": "Auditoria acústica inteligente com Edge AI para transformar a biossegurança e rentabilidade da sua maternidade suína.",
+    "nav": {
+      "product": "Produto",
+      "problem": "O Desafio",
+      "solution": "Tecnologia",
+      "simulator": "Simulador ROI",
+      "earlyAdopters": "Acesso Antecipado",
+      "company": "Empresa",
+      "about": "Sobre a Brivex",
+      "contact": "Contato",
+      "privacy": "Privacidade",
+      "terms": "Termos Legais"
+    },
     "legal": "Bio-Alert é uma solução de inovação desenvolvida pela Brivex.",
     "copyright": "© 2026 Bio-Alert · Uma Inovação Brivex"
   }
