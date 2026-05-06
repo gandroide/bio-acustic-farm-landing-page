@@ -19,6 +19,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
+import './BioAlertImpactSimulator.css';
 
 export default function BioAlertImpactSimulator() {
   const { t } = useLanguage();
@@ -60,20 +61,17 @@ export default function BioAlertImpactSimulator() {
 
   const Pill = ({ active, onClick, icon: Icon, label, subLabel }) => (
     <button
+      className="simulator-pill"
       onClick={onClick}
       style={{
-        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-        padding: '1.2rem 1rem', borderRadius: 'var(--radius-md)', 
         background: active ? 'var(--color-steel-800)' : 'transparent',
         border: `1px solid ${active ? 'var(--color-green-500)' : 'var(--color-steel-600)'}`,
-        cursor: 'pointer', transition: 'all var(--transition-base)',
         color: active ? '#fff' : 'var(--text-on-dark-muted)',
-        position: 'relative'
       }}
     >
-      <Icon style={{ width: '24px', height: '24px', marginBottom: '10px', color: active ? 'var(--color-green-400)' : 'var(--text-tertiary)' }} />
-      <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>{label}</span>
-      {subLabel && <span style={{ fontSize: '0.75rem', opacity: 0.8, marginTop: '4px' }}>{subLabel}</span>}
+      <Icon className="simulator-pill-icon" style={{ color: active ? 'var(--color-green-400)' : 'var(--text-tertiary)' }} />
+      <span className="simulator-pill-label">{label}</span>
+      {subLabel && <span className="simulator-pill-sub hide-on-mobile">{subLabel}</span>}
       {active && (
         <motion.div 
           layoutId={`pill-indicator-${label.split(' ')[0]}`}
@@ -97,7 +95,7 @@ export default function BioAlertImpactSimulator() {
           <h2 className="section-title" style={{ color: '#fff' }}>
             {t('simulator.title')}
           </h2>
-          <p className="section-description" style={{ color: 'var(--text-on-dark-muted)', margin: '0 auto', maxWidth: '700px' }}>
+          <p className="section-description hide-on-mobile" style={{ color: 'var(--text-on-dark-muted)', margin: '0 auto', maxWidth: '700px' }}>
             {t('simulator.description')}
           </p>
         </div>
@@ -108,33 +106,33 @@ export default function BioAlertImpactSimulator() {
             {/* Inputs Panel */}
             <div style={{ padding: 'var(--space-2xl)', borderRight: '1px solid var(--color-steel-700)' }}>
               
-              <div style={{ marginBottom: 'var(--space-xl)' }}>
-                <label className="form-label" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px', color: 'var(--text-on-dark)' }}>
+              <div className="simulator-inputs-group">
+                <label className="form-label" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px', color: 'var(--text-on-dark)' }}>
                   <Thermometer size={18} color="var(--color-amber-500)"/> {t('simulator.labels.temperature')}
                 </label>
-                <div className="grid-3" style={{ gap: '12px' }}>
+                <div className="simulator-options">
                   <Pill active={temp === 'optimal'} onClick={() => setTemp('optimal')} icon={Thermometer} label={t('simulator.options.optimal')} subLabel="18-22°C" />
                   <Pill active={temp === 'summer'} onClick={() => setTemp('summer')} icon={ThermometerSun} label={t('simulator.options.summer')} subLabel="28-32°C" />
                   <Pill active={temp === 'heatwave'} onClick={() => setTemp('heatwave')} icon={Flame} label={t('simulator.options.heatwave')} subLabel="35-40°C" />
                 </div>
               </div>
 
-              <div style={{ marginBottom: 'var(--space-xl)' }}>
-                <label className="form-label" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px', color: 'var(--text-on-dark)' }}>
+              <div className="simulator-inputs-group">
+                <label className="form-label" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px', color: 'var(--text-on-dark)' }}>
                   <Volume2 size={18} color="var(--color-steel-200)"/> {t('simulator.labels.noise')}
                 </label>
-                <div className="grid-3" style={{ gap: '12px' }}>
+                <div className="simulator-options">
                   <Pill active={noise === 'low'} onClick={() => setNoise('low')} icon={Volume} label={t('simulator.options.low')} subLabel="55 dB" />
                   <Pill active={noise === 'normal'} onClick={() => setNoise('normal')} icon={Volume1} label={t('simulator.options.normal')} subLabel="75 dB" />
                   <Pill active={noise === 'high'} onClick={() => setNoise('high')} icon={Volume2} label={t('simulator.options.high')} subLabel="95+ dB" />
                 </div>
               </div>
 
-              <div>
-                <label className="form-label" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px', color: 'var(--text-on-dark)' }}>
+              <div className="simulator-inputs-group" style={{ marginBottom: 0 }}>
+                <label className="form-label" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px', color: 'var(--text-on-dark)' }}>
                   <Building2 size={18} color="var(--color-steel-400)"/> {t('simulator.labels.productionSize')}
                 </label>
-                <div className="grid-3" style={{ gap: '12px' }}>
+                <div className="simulator-options">
                   <Pill active={size === '500'} onClick={() => setSize('500')} icon={Home} label="500" subLabel={t('simulator.options.mothers')} />
                   <Pill active={size === '1000'} onClick={() => setSize('1000')} icon={Factory} label="1,000" subLabel={t('simulator.options.mothers')} />
                   <Pill active={size === '5000'} onClick={() => setSize('5000')} icon={Building2} label="5,000+" subLabel={t('simulator.options.mothers')} />
@@ -150,6 +148,7 @@ export default function BioAlertImpactSimulator() {
                   <motion.div
                     key="phase-1"
                     initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}
+                    className="simulator-output-panel"
                     style={{ padding: 'var(--space-2xl)', height: '100%', display: 'flex', flexDirection: 'column' }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: 'var(--space-2xl)' }}>
@@ -160,20 +159,20 @@ export default function BioAlertImpactSimulator() {
                     </div>
 
                     <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
-                      <div style={{ background: 'rgba(255,255,255,0.03)', padding: 'var(--space-lg) var(--space-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(217, 123, 13, 0.15)' }}>
+                      <div className="simulator-metric-card" style={{ background: 'rgba(255,255,255,0.03)', padding: 'var(--space-lg) var(--space-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(217, 123, 13, 0.15)' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-on-dark-muted)', marginBottom: '8px', fontSize: '0.95rem' }}>
                           <TrendingDown size={18} /> {t('simulator.phase1.mortalityRisk')}
                         </div>
-                        <div style={{ fontSize: '3.5rem', fontWeight: 700, color: 'var(--color-amber-100)', lineHeight: 1 }}>
+                        <div className="simulator-metric-value" style={{ fontSize: '3.5rem', fontWeight: 700, color: 'var(--color-amber-100)', lineHeight: 1 }}>
                           {metrics.mortalityRate}%
                         </div>
                       </div>
 
-                      <div style={{ background: 'rgba(255,255,255,0.03)', padding: 'var(--space-lg) var(--space-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(217, 123, 13, 0.15)' }}>
+                      <div className="simulator-metric-card" style={{ background: 'rgba(255,255,255,0.03)', padding: 'var(--space-lg) var(--space-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(217, 123, 13, 0.15)' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-on-dark-muted)', marginBottom: '8px', fontSize: '0.95rem' }}>
                           <Activity size={18} /> {t('simulator.phase1.economicLoss')}
                         </div>
-                        <div style={{ fontSize: '3.5rem', fontWeight: 700, color: 'var(--color-amber-500)', lineHeight: 1 }}>
+                        <div className="simulator-metric-value" style={{ fontSize: '3.5rem', fontWeight: 700, color: 'var(--color-amber-500)', lineHeight: 1 }}>
                           ${metrics.estimatedLoss} <span style={{ fontSize: '1.2rem', color: 'var(--text-on-dark-muted)' }}>{t('simulator.phase1.currency')}</span>
                         </div>
                       </div>
@@ -191,6 +190,7 @@ export default function BioAlertImpactSimulator() {
                   <motion.div
                     key="phase-2"
                     initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}
+                    className="simulator-output-panel"
                     style={{ padding: 'var(--space-2xl)', height: '100%', display: 'flex', flexDirection: 'column', background: 'rgba(26, 86, 50, 0.1)' }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: 'var(--space-2xl)' }}>
@@ -202,21 +202,21 @@ export default function BioAlertImpactSimulator() {
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', flex: 1 }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '16px', background: 'rgba(0,0,0,0.2)', padding: '1.2rem', borderRadius: 'var(--radius-md)', border: '1px solid rgba(61, 153, 96, 0.2)' }}>
-                        <Activity size={24} color="var(--color-green-500)" />
+                        <Activity size={24} color="var(--color-green-500)" style={{ flexShrink: 0 }} />
                         <span style={{ color: 'var(--text-on-dark)', fontSize: '1.05rem' }}>{t('simulator.phase2.detection')} <strong>{t('simulator.phase2.detectionTime')}</strong></span>
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '16px', background: 'rgba(0,0,0,0.2)', padding: '1.2rem', borderRadius: 'var(--radius-md)', border: '1px solid rgba(61, 153, 96, 0.2)' }}>
-                        <BellRing size={24} color="var(--color-green-500)" />
+                        <BellRing size={24} color="var(--color-green-500)" style={{ flexShrink: 0 }} />
                         <span style={{ color: 'var(--text-on-dark)', fontSize: '1.05rem' }}>{t('simulator.phase2.notification')} <strong>{t('simulator.phase2.notificationTime')}</strong></span>
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '16px', background: 'rgba(0,0,0,0.2)', padding: '1.2rem', borderRadius: 'var(--radius-md)', border: '1px solid rgba(61, 153, 96, 0.2)' }}>
-                        <TrendingDown size={24} color="var(--color-green-500)" />
+                        <TrendingDown size={24} color="var(--color-green-500)" style={{ flexShrink: 0 }} />
                         <span style={{ color: 'var(--text-on-dark)', fontSize: '1.05rem' }}>{t('simulator.phase2.reduction')} <strong style={{ color: 'var(--color-green-400)'}}>{t('simulator.phase2.reductionValue')}</strong></span>
                       </div>
 
                       <div style={{ marginTop: 'auto', paddingTop: 'var(--space-xl)', borderTop: '1px solid var(--color-green-900)' }}>
                         <span style={{ fontSize: '0.95rem', color: 'var(--color-green-400)', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>{t('simulator.phase2.roi')}</span>
-                        <div style={{ fontSize: '4rem', fontWeight: 700, color: '#fff', lineHeight: 1, marginTop: '12px' }}>
+                        <div className="simulator-metric-value" style={{ fontSize: '4rem', fontWeight: 700, color: '#fff', lineHeight: 1, marginTop: '12px' }}>
                           +${metrics.roi}
                         </div>
                       </div>

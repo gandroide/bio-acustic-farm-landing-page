@@ -213,19 +213,43 @@
 
 @media (max-width: 768px) {
   .tech-specs__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
+  .tech-specs__card {
+    padding: var(--space-lg) var(--space-md);
+  }
+  .tech-specs__card:last-child {
+    grid-column: span 2;
+    align-items: center;
+    text-align: center;
+  }
+  .tech-specs__card-desc {
+    display: none;
+  }
+  .tech-specs__value {
+    font-size: 1.2rem;
+  }
+  .tech-specs__icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: var(--space-md);
+  }
+  
+  /* Make certifications look like a neat row of tags instead of a rigid grid */
   .tech-specs__certs {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
   }
-  .tech-arch__flow {
-    flex-direction: column;
-    align-items: stretch;
+  .tech-certs__item {
+    display: inline-block;
   }
-  .tech-arch__arrow {
-    display: none; /* Hide arrows on mobile for cleaner stack */
+  .tech-certs__desc {
+    display: none;
   }
-  .tech-arch__node {
-    margin-bottom: var(--space-sm);
+  
+  .tech-arch {
+    display: none;
   }
 }

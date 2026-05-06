@@ -1,0 +1,85 @@
+/* Mobile optimization for Simulator */
+.simulator-inputs-group {
+  margin-bottom: var(--space-xl);
+}
+
+.simulator-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.simulator-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  position: relative;
+  text-align: center;
+}
+
+.simulator-pill-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.simulator-pill-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.simulator-pill-sub {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .simulator-inputs-group {
+    margin-bottom: var(--space-lg);
+  }
+
+  .simulator-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .simulator-pill {
+    padding: 0.6rem 0.2rem;
+  }
+
+  .simulator-pill-label {
+    font-size: 0.75rem;
+  }
+
+  .simulator-pill-icon {
+    margin-bottom: 4px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  /* Compact the outputs panel */
+  .simulator-output-panel {
+    padding: var(--space-md) !important;
+  }
+  
+  .simulator-metric-card {
+    padding: var(--space-md) var(--space-lg) !important;
+  }
+  
+  .simulator-metric-value {
+    font-size: 2.8rem !important;
+  }
+}
